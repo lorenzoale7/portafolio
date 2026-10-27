@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portafolio Digital - Lorenzo Santino Ale</title>
+<style>
+  :root {
+    --fondo: #f5f7fa;
+    --texto: #1c2733;
+    --apagado: #5b6b7b;
+    --azul: #1f4e79;
+    --azul-claro: #dce8f4;
+    --borde: #c9d4df;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #141a21;
+      --texto: #e8edf2;
+      --apagado: #9fb0c0;
+      --azul: #7fb2e5;
+      --azul-claro: #1f2c3a;
+      --borde: #2f3d4b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.7;
+  }
+  nav {
+    background: var(--azul-claro);
+    border-bottom: 1px solid var(--borde);
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    justify-content: center;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+  }
+  nav a { color: var(--azul); text-decoration: none; padding: 0.15rem 0; border-bottom: 2px solid transparent; }
+  nav a:hover, nav a:focus-visible, nav a.activo { border-bottom-color: var(--azul); outline: none; }
+  header { text-align: center; padding: 4rem 1.25rem 2.5rem; }
+  header h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); margin: 0 0 0.75rem; line-height: 1.1; color: var(--azul); }
+  header p { margin: 0.2rem 0; color: var(--apagado); font-size: 1.1rem; }
+  header .nombre { color: var(--texto); font-size: 1.25rem; }
+  main { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem 4rem; }
+  h2 { font-size: 1.8rem; margin: 1rem 0 0.75rem; color: var(--azul); }
+  .contacto { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--borde); font-family: system-ui, sans-serif; }
+  .contacto p { margin: 0.4rem 0; }
+  .contacto a { color: var(--azul); word-break: break-all; }
+  a:focus-visible { outline: 2px solid var(--azul); outline-offset: 2px; }
+  footer { text-align: center; color: var(--apagado); font-family: system-ui, sans-serif; font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--borde); }
+</style>
+</head>
+<body>
+
+<nav aria-label="Principal">
+  <a href="#inicio" class="activo">Inicio</a>
+  <a href="https://sites.google.com/view/trabajofinallorenzo/curso-de-educacion-financiera">Curso de educación financiera</a>
+  <a href="https://sites.google.com/view/trabajofinallorenzo/unsam">UNSAM</a>
+  <a href="https://sites.google.com/view/trabajofinallorenzo/uca">UCA</a>
+  <a href="https://sites.google.com/view/trabajofinallorenzo/uba">UBA</a>
+  <a href="https://sites.google.com/view/trabajofinallorenzo/curso-de-ia">Curso de IA</a>
+  <a href="https://sites.google.com/view/trabajofinallorenzo/banco-ciudad">Banco Ciudad</a>
+</nav>
+
+<header id="inicio">
+  <h1>Portafolio Digital</h1>
+  <p>Trabajo final</p>
+  <p class="nombre">Lorenzo Santino Ale</p>
+  <p>5.º Informática</p>
+</header>
+
+<main>
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Mi nombre es Lorenzo Santino Ale, tengo 17 años y actualmente estoy transitando mi etapa de educación secundaria. En este portafolio van a encontrar un recorrido por las distintas actividades y experiencias que realicé durante cuarto y quinto año, en el marco de Vinculación con el Futuro.</p>
+    <p>A través de estas propuestas, pude adquirir nuevos conocimientos, desarrollar habilidades y descubrir intereses en áreas como la informática, la inteligencia artificial y la educación financiera. Este espacio refleja parte de mi aprendizaje, mi crecimiento personal y las experiencias que me ayudan a pensar en mi futuro académico y profesional.</p>
+
+    <div class="contacto">
+      <p>Gmail de contacto: <a href="mailto:lorenzosantinoale@gmail.com">lorenzosantinoale@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ale-lorenzo-7a59653b7/" target="_blank" rel="noopener">https://www.linkedin.com/in/ale-lorenzo-7a59653b7/</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>Lorenzo Santino Ale · Portafolio Digital</footer>
+
+</body>
+</html>
